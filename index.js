@@ -1,20 +1,28 @@
-var idade,nome
-var valorUm = 3
-var valorDois = 4 
+var idade,nome 
+var ipi
+var anpi
 
 idade = prompt("Insira sua idade")
-console.log(idade)
 nome = prompt("Digite seu nome")
-console.log(nome)
+var AnoNasc = 2023 - idade
 
-var soma = valorUm + valorDois
-var subtracao =  valorUm - valorDois
-var multiplicacao = valorUm * valorDois
-var divisao = valorUm / valorDois
-var modulo = valorUm % valorDois
+if(idade % 2==0){
+ipi="par"
+}else{
+    ipi="ímpar"
+}
 
-console.log("Soma: ", soma)
-console.log("Subtração: ", subtracao)
-console.log("Divisão: ", divisao)
-console.log("Multiplicação:", multiplicacao)
-console.log("Módulo: ", modulo)
+if(AnoNasc % 2==0){
+anpi="par"
+}else{
+    anpi="ímpar"
+}
+
+console.log("Olá", nome, "você tem", idade, "anos, que é um número", ipi, "e nasceu em", AnoNasc,
+ ",que é um número", anpi)
+
+ if(idade>=18){
+    console.log("A venda de bebidas alcoólicas está liberada.")
+ }else{
+    console.log("A venda de bebidas alcoólicas não está liberada.")
+ }
